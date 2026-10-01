@@ -117,20 +117,19 @@ Provides deeper analysis of:
 - Claim behavior across customer and policy segments
 
 ---
-
 ## 🖼️ Dashboard Preview
 
 ### Executive Overview
 
-![Executive Overview](1 Executive-Overview.png)
+![Executive Overview](./1%20Executive%20Overview.png)
 
 ### Claims Analysis
 
-![Claims Analysis](Screenshots/claims-analysis.png)
+![Claims Analysis](./2%20Claim%20Analysis.png)
 
-### Policy & Customer Analysis
+### Premium & Customer Analysis
 
-![Policy & Customer Analysis](Screenshots/policy-customer-analysis.png)
+![Premium & Customer Analysis](./3%20Premium%20and%20Customer%20Analysis.png)
 
 ---
 
