@@ -122,7 +122,7 @@ Provides deeper analysis of:
 
 ### Executive Overview
 
-![Executive Overview](Screenshots/executive-overview.png)
+![Executive Overview](1 Executive-Overview.png)
 
 ### Claims Analysis
 
