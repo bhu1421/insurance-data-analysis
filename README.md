@@ -1,42 +1,138 @@
-# insurance-data-analysis
-End-to-end insurance data analysis and Power BI dashboard using SQL Server, Power Query and DAX.
-
-
 # Insurance Data Analysis & Power BI Dashboard
+
+An end-to-end insurance data analytics project using **Microsoft SQL Server, Power Query, DAX, and Power BI** to analyze policy performance, customer segments, premiums, coverage, and claims.
+
+## 🔗 Published Power BI Report
+
+👉 **[View Interactive Power BI Dashboard](https://app.powerbi.com/groups/0a334a76-91ec-49cf-93ab-6def0cdbad56/reports/4206f312-4448-4ad6-91fd-3756ce354845/3425d00b5381c017137c?experience=power-bi&bookmarkGuid=75e3f5af91c1504012dc)**
+
+---
 
 ## 📊 Project Overview
 
-An end-to-end insurance data analytics project developed to analyze policy performance, premium and coverage amounts, customer segments, and claim behavior.
+This project analyzes insurance policy and claims data to understand:
 
-The dataset was stored in **Microsoft SQL Server** and then queried and loaded into **Power BI** for data preparation, modeling, DAX-based analysis, and interactive dashboard development.
+- Policy distribution and performance
+- Premium and coverage amounts
+- Customer demographics and segmentation
+- Claim volume, status, and amounts
+- Policy and claim behavior across different customer and policy segments
+
+The data is stored in **Microsoft SQL Server** and loaded into **Power BI**, where it is prepared, modeled, analyzed using DAX, and presented through an interactive three-page dashboard.
+
+---
 
 ## 🛠️ Tools & Technologies
 
-- Power BI
-- Power Query
-- DAX
-- Data Modeling
-- Microsoft SQL Server
+- **Microsoft SQL Server** — Data storage and querying
+- **Power Query** — Data cleaning and transformation
+- **Power BI** — Interactive dashboard development
+- **DAX** — Analytical measures and calculations
+- **Data Modeling** — Relationships between customer, policy, date, and claims data
+
+---
 
 ## 🔄 Data Preparation
 
-The data was cleaned and transformed using **Power Query** before analysis. This included data type standardization, handling missing values, and creating derived fields such as **Age Group** and **Customer Active/Inactive Status** to support customer and policy analysis.
+Data preparation was performed using **Power Query** before analysis.
 
-Some records contain missing `ClaimDate` values. These records were retained for overall analysis but are excluded from time-based claim trend analysis where a date is required.
+Key preparation steps included:
 
-## 📈 Dashboard
+- Data type standardization
+- Handling missing values
+- Creating analytical fields such as **Age Group**
+- Creating **Customer Active/Inactive Status**
+- Preparing policy and claims data for analysis
 
-The Power BI report consists of three interactive pages:
+Some records contain missing `ClaimDate` values. These records are retained for overall analysis but are excluded from time-based claim trend analysis where a valid date is required.
+
+---
+
+## 🧩 Data Model
+
+The project uses a relational data model connecting customer, policy, date, and claims information to support interactive analysis in Power BI.
+
+The model enables analysis across:
+
+- Customers
+- Policies
+- Claims
+- Dates
+- Policy types
+- Customer demographics
+
+---
+
+## 📐 DAX & Analysis
+
+DAX measures were developed to support analysis of:
+
+- Policy counts
+- Premium amounts
+- Coverage amounts
+- Claim volumes
+- Claim amounts
+- Claim outcomes
+- Customer and policy-level metrics
+
+These measures are used throughout the dashboard to provide dynamic results based on selected filters.
+
+---
+
+## 📈 Power BI Dashboard
+
+The Power BI report contains **three interactive pages**.
+
+### 1. Executive Overview
+
+Provides a high-level view of the insurance portfolio, including:
+
+- Policy performance
+- Premium amounts
+- Coverage amounts
+- Claim information
+- Policy type distribution
+- Claim status
+- Customer age-group analysis
+
+### 2. Claims Analysis
+
+Focuses on claim-related performance and behavior, including:
+
+- Claim volume
+- Claim status
+- Claim amounts by policy type
+- Monthly claim trends
+- Claim-related segmentation
+
+### 3. Policy & Customer Analysis
+
+Provides deeper analysis of:
+
+- Policy distribution
+- Policy status
+- Customer demographics
+- Premium and coverage metrics
+- Customer segmentation
+- Claim behavior across customer and policy segments
+
+---
+
+## 🖼️ Dashboard Preview
 
 ### Executive Overview
-Provides a high-level view of policies, premiums, coverage, and claims, with breakdowns by policy type, claim status, and customer age group.
+
+![Executive Overview](Screenshots/executive-overview.png)
 
 ### Claims Analysis
-Focuses on claim volume, claim status, claim amounts by policy type, and monthly claim trends.
+
+![Claims Analysis](Screenshots/claims-analysis.png)
 
 ### Policy & Customer Analysis
-Analyzes policy distribution, policy status, customer demographics, premium and coverage metrics, and claim behavior.
 
+![Policy & Customer Analysis](Screenshots/policy-customer-analysis.png)
+
+---
 
 ## 📂 Project Structure
 
@@ -44,11 +140,14 @@ Analyzes policy distribution, policy status, customer demographics, premium and 
 Insurance-Data-Analysis/
 │
 ├── README.md
+│
 ├── PowerBI/
 │   └── Insurance_Data_Analysis.pbix
+│
 ├── Screenshots/
 │   ├── executive-overview.png
 │   ├── claims-analysis.png
 │   └── policy-customer-analysis.png
+│
 └── Data/
     └── analysis_queries.csv
